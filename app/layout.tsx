@@ -2,11 +2,11 @@ import Script from 'next/script'
 
 import './globals.css'
 
-export default function RootLayout({
-  children,
-}: {
+type Props = {
   children: React.ReactNode
-}) {
+}
+
+export default async function RootLayout ({ children }: Props) {
   return (
     <html lang='en' data-theme="light">
       <head>
